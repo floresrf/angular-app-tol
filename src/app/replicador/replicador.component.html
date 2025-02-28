@@ -1,0 +1,19 @@
+<div class="container d-flex flex-column align-items-center text-center">
+    <div class="mb-3">
+        <label for="inputTexto">Excribe algo:</label>
+    </div>
+
+    <div class="mb-3">
+        <input id="inputTexto" type="text" (input)="actualizarTexto($event)"/>
+    </div>
+</div>
+
+<div class="container d-flex flex-column align-items-center text-center">
+    <div class="mb-3">
+        <label for="replicaTexto">Texto replicado:</label>
+    </div>
+
+    <div class="mb-3">
+        <input id="replicaTexto" type="text" [value]="texto" readonly>
+    </div>
+</div>
